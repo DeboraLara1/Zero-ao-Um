@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Debora Lara">
+  <meta name="description" content="Zero ao Um: Atividade 3 HTML - Montar um Formulário simples">
+  <title>Tarefa 03 </title>
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/logo.png">
+  <link rel="apple-touch-icon-precomposed" href="./img/logo.png">
+</head>
+
+<body>
+  <form>
+    <h1>Formulário</h1>
+    <br>
+    <!-- inicio das informações -->
+    <span><strong>Nome: </strong> </span>
+    <input type="text">
+    <br><br>
+    <span><strong>E-mail: </strong></span>
+    <input type="email">
+    <br><br>
+    <span><strong>Telefone: </strong>
+      <input name="phone" id="phone" placeholder="(__) _ ____-____">
+      <br><br>
+      <span><strong>Idade: </strong></span>
+      <select id="cars">
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+      </select>
+      <br><br>
+      <p><strong>Sexo: </strong></p>
+      <label for="M"><strong>M</strong></label>
+      <input type="radio" id="M" name="gender" value="M">
+      <label for="F"><strong> F</strong></label>
+      <input type="radio" id="F" name="gender" value="F">
+      <!-- inicio tipo de navegador -->
+      <p><strong>Tipo de navegador utilizado: </strong></p>
+      <input type="checkbox">
+      <label><strong> Google Chrome</strong></label>
+      <input type="checkbox">
+      <label><strong> Internet Explorer</strong></label>
+      <input type="checkbox">
+      <label><strong> Firefox</strong></label>
+      <input type="checkbox">
+      <label><strong> Safari</strong></label>
+      <input type="checkbox">
+      <label><strong> Outros</strong></label>
+      <!-- inicio mensagem -->
+      <p><strong>Mensagem: </strong></p>
+      <textarea rows="4" cols="50">Digite aqui sua mensagem...
+  </textarea>
+      <br><br>
+      <!-- Aqui podemos usar um input ou bottom, irei utilizar os dois para mostrar como é possivel usar ambas opções -->
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+  </form>
+</body>
+
+</html>

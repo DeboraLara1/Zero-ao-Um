@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Debora Lara">
+  <meta name="description" content="Zero ao Um: Atividade 4 HTML - Montar um Formulário Completo">
+  <title>Tarefa 04 </title>
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/logo.png">
+  <link rel="apple-touch-icon-precomposed" href="./img/logo.png">
+</head>
+
+<body>
+  <form>
+    <span>Nome: </span>
+    <input type="text" required>
+    <br><br>
+    <span>Idade: </span>
+    <input type="text">
+    <br><br>
+    <span>Senha </span>
+    <input type="password" required>
+    <br><br>
+    <fieldset>
+      <legend>Sexo:</legend>
+      <label for="M">M</label>
+      <input type="radio" id="M" name="gender" value="M">
+      <label for="F"> F </label>
+      <input type="radio" id="F" name="gender" value="F">
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Estado civil:</legend>
+      <label for="M">Casado</label>
+      <input type="radio" id="Casado" name="gender" value="Casado">
+      <label for="F">Enrolado</label>
+      <input type="radio" id="Enrolado" name="gender" value="Enrolado">
+      <label for="Solteiro"> Solteiro</label>
+      <input type="radio" id="Solteiro" name="gender" value="Solteiro">
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Comida favorita:</legend>
+      <input type="checkbox">
+      <label> Macarrão</label><br>
+      <input type="checkbox">
+      <label> Frango</label>
+    </fieldset>
+    <br>
+    <span>Selecione seu arquivo: </span>
+    <input type="file" multiple>
+    <br>
+    <span>Seleione uma cor: </span>
+    <input type="color" id="head" name="head" value="#e66465">
+    <br>
+    <!-- Ainda não consegui descobrir como deixar com dia e mês sem usar javascript e ou datetype ="dd-mm" neste formato o usuário não consegue selecionar a data apenas digitar-->
+    <span>Selecione uma Data: </span>
+    <input type="date">
+    <br>
+    <span>Email: </span>
+    <input type="email" required>
+    <br>
+    <span>Número: </span>
+    <input type="number" min="0" max="50"><br>
+    <input type="range" value="40">
+    <br>
+    <span>Selecione uma Data: </span>
+    <input type="date">
+    <br><br>
+    <span>Selecione uma Data e horas: </span>
+    <input type="datetime">
+    <br>
+    <span>Selecione uma Data, horas e local: </span>
+    <input type="datetime-local">
+    <br>
+    <span>Selecione um horário: </span>
+    <input type="time">
+    <br>
+    <span>Selecione uma semana: </span>
+    <input type="week">
+    <br>
+    <span>Selecione um mês: </span>
+    <input type="month">
+    <br><br>
+    <textarea rows="5" cols="30">Digite aqui sua mensagem...
+      </textarea>
+    <br><br>
+    <select id="cars">
+      <option value="Vermelho">Vermelho</option>
+      <option value="Verde">Verde</option>
+      <option value="Azul">Azul</option>
+      <option value="Rosa">Rosa</option>
+    </select>
+    <span>URL: </span>
+    <input type="url" placeholder="https://zeroum.maitha.com.br/#/">
+    <br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Redefinir">
+  </form>
+</body>
+
+</html>
